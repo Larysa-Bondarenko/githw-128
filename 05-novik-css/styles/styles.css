@@ -1,0 +1,227 @@
+:root {
+    --primary-color: black;
+    --secondary-color: gray;
+
+    }
+*{
+    margin: 0;
+    padding: 0;    
+    box-sizing: border-box
+    /* box-shadow: inset 0 0 1px 1px red;  - doesn't work
+    used to make borders of all elements visiblee
+    for better positioning*/
+}
+body {
+    color: var(--primary-color);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+/*--Top Navigation--*/
+.top-nav{
+    padding:28px 0;
+    border-style: none;
+    border-bottom: 1px solid gray;    
+}
+.top-nav ul{
+ list-style: none;
+ text-align: center;
+ font-size: 0;
+}
+.top-nav ul li{
+    display: inline-block;
+    /*padding: 27.5px auto; NB- fractions not good for properties*/
+    margin: 0 20px;
+    font-size: 18px;   
+
+}
+.top-nav ul li a {
+    text-decoration: none;
+    color: gray;
+
+}
+.top-nav ul li a.home{
+    color: var(--text-color);
+}
+.container{
+    width: min(90%, 970px); /*or max?*/
+    text-align: center;
+    margin: 0 auto 16px;
+}
+h1 {
+text-align: left;
+font-size: 48px;
+font-weight: 700;
+margin: 12; 
+margin-bottom: 50px;
+} 
+.title-hero img {
+    /* margin: 0; */
+    vertical-align: top;
+}
+
+/*--About--*/
+.about {
+    background-color: lightgray;
+} 
+h2 {
+    font-size: 34px;
+    font-weight: 750;
+}
+.about h2 {
+    width: 100%;
+    padding-top: 100px;    
+    margin-bottom: 50px;
+}
+.about p {
+    font-size: 18px;    
+    margin-bottom: 30px;
+}
+/*.about p:first-child{*/
+    /* padding: 0 290px;*/ /*only br in
+    first p makes exact devision 
+    of text after Minsk.
+    don't know what else can? *? }*/
+
+/* .about p:nth-child(2) {
+    padding: 0 290px;
+} */
+.about p:last-child {
+    padding: 0 0 /* 315px*/ 100px;
+}
+/*--Skills--*/
+.skills .container {
+    padding: 100 0 101px;    
+}
+.skills ul {
+    list-style: none;
+    text-align: center;
+    font-size: 0;
+}
+
+.skills h2 {
+    padding-top: 100px;
+    margin-bottom: 20px;
+}
+.skills h2 + div {
+    margin-bottom: 50px;
+}
+.skills ul li {
+    display: inline-block;
+    font-size: 14px;
+    margin-right: 96.5px;
+    vertical-align: top;
+    margin-bottom: 101px;
+}
+ul li .skill-item {
+    width: 170px;    
+}
+.skills ul li:nth-child(4){
+    margin-right: 0;
+    
+}
+.skill-icon {
+    margin-bottom: 25px;  
+}
+.skill-title {
+    text-align: center;
+    margin: 0 auto 60px;
+    color: var(--secondary-color);            
+}
+#figma-text {
+    margin-bottom: 76px;
+}
+.skill-rating {
+    font-size: 0;
+}
+.star {
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    background: url("../assets/images/bl-star.png") 50% 50%/26px auto no-repeat;
+}
+.skill-rating .star + .star {
+    margin-left: 10px;
+}
+.star.grey {
+    opacity: .2;
+}
+
+/*--Portfolio--*/
+.portfolio {
+    background-color: lightgray;    
+    padding: 100 0;
+}
+.portfolio h2 {
+    display: inline-block;
+    width: 150px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.portfolio img {     
+    margin-bottom: 40px;
+}
+.portfolio a {
+    color: var(--primary-color);
+    text-decoration-thickness: 5%;
+}
+.fashion, .reebok {
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+margin-bottom: 70px;
+}
+.braun {
+    display: inline-block;
+    width: 260px;
+    text-align: center;
+margin-bottom: 100px;
+}
+
+/*--Footer--*/
+.footer h2 {
+    padding-top: 100px;
+    margin-bottom: 20px;
+}
+.footer h2 + div {
+    text-align: center;
+    width: 280px;
+    margin:0 auto 60px;
+}
+button {
+    width: 180px;
+    height: 44px;
+    padding: 10 16px;
+    font-size: 18px;
+    letter-spacing: 1.8px;
+    border-radius: 22px;
+    transition: all .1s ease-in; /*added after submit*/
+    margin: 0 auto 30px;
+    color: white;
+    background-color: black;
+} 
+.footer ul li {
+    display: inline-block;
+    width: 40px;
+    
+    list-style: none;
+    margin-left: 50px;
+}
+.social-m {
+    font-size: 0;
+    margin-bottom: 60px;
+}
+.footer ul li:first-child {
+    margin-left: 0;
+}
+.like-me {
+    display: inline-block;
+    text-align: center;
+    width: 200px;
+    font-size: 14px;
+    color: var(--secondary-color);
+    margin-bottom: 100px;
+}
+
+
+
+
