@@ -86,12 +86,6 @@
     background-color: var(--white);    
   }
   
-  .nav-buttons a{
-    display: inline-block;
-    text-align: center;
-    width: 110px;
-    height: 44px;    
-  }
   .sign-in:hover {
     border: 1px solid #BCD0E5;   
     background-color: #BCD0E5;     
@@ -181,7 +175,7 @@ padding: 0 9px;
    width: 270px; 
   }
   .tools {
-    background-image: url(../images/bg-full-big.png);
+    background-image: url('../images/bg-full-big.png');
     background-size: 2211px;
     background-repeat: no-repeat; 
     background-position: bottom;
@@ -194,29 +188,32 @@ padding: 0 9px;
         /* height: 50px; */
     justify-content: center;
     text-align: center;
-    margin-bottom: 30px;
-    
+    margin-bottom: 30px;    
   }
-  .test-item:nth-child(1) {
-    background-image: url(../images/bg-purple.png);
-  background-repeat: no-repeat;
+  .arrow {
+    border-radius: 15px;
+background: #7752BE;
   }
-  .test-item:nth-child(2) {
-    background-image: url(../images/bg-orange.png);
-  background-repeat: no-repeat;
+  .wave {
+    border-radius: 15px;
+    background: #FAB005;
   }
-  .test-item:nth-child(3) {
-    background-image: url(../images/bg-red.png);
-  background-repeat: no-repeat;
+  .heart {
+    border-radius: 15px;
+    background-color: #F03E3D; 
   }
-  .test-item:nth-child(4) {
-    background-image: url(../images/bg-blue.png);
-  background-repeat: no-repeat;
+  .sand-clock {
+    border-radius: 15px;
+    background-color: #4DADF7; 
   }
   .pic-item img {
+    display: flex; /*Sasha insists on 
+    flex necessary here, but it works without it too*/
     width: 18px;
-    height: 18px;
-    justify-content: center;
+    /* aspect-ratio: 1; - I removed,
+     bo icons get fat with asp-ratio*/
+    /* height: 18px; */
+    justify-content: center; /*these 2 properties won't work without display:flex*/
     align-self: center;       
   }
   .tests {
@@ -235,7 +232,7 @@ font-size: 16px;
 font-weight: 500;
 line-height: 26px;
   }
-/*--Styling 2 same buttons--*/
+/*--Styling 2 same buttons Sign up Now--*/
 .sign-now {
   width: 180px;
   padding: 13px 39px;
@@ -303,19 +300,15 @@ font-size: 20px;
 font-weight: 700;
 line-height: 30px; 
   }
-.form-row  {
+.form-row input {
    width: 340px;
     border: 1px solid var(--grey);
     color: var(--grey);
 font-size: 16px;
 font-weight: 400;
-padding: 15 18 15 10px;
+padding: 15px 18px 15px 10px;
 }
-/* .form-row input::placeholder {
-  content: '';
-  border-style: 3px solid red;
-  text-decoration-color: red;
-} */
+
 
 
      
