@@ -1,0 +1,126 @@
+@import "fonts";
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+.container {
+    width: min(90%, 1200px);
+    margin: 0 auto;
+}
+
+//--Header
+.header-flex {
+    width: 1200px;
+    display: flex;
+    // justify-content: center;
+padding: 13px 0;
+    margin-bottom: 30px;
+}
+.header-flex a {
+    text-decoration: none;
+//     color: #FFF;
+// text-align: center;
+// font-family: 'Tourney', sans-serif;
+// font-size: 22px;
+// font-style: normal;
+// font-weight: 600;
+// line-height: 18px; 
+// letter-spacing: 0.88px;
+padding: 13px 0;
+margin-right: 50px;
+}
+.doc {
+    display: flex;
+    width: 300px;
+    justify-content: center;
+    gap: 10px;
+    flex-grow: 2;
+    padding: 13px 0;
+    margin-right: 483px;
+}
+.doc span{
+    color: #000;
+font-family: 'Staatliches', sans-serif;
+font-size: 22px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 0.66px;
+text-transform: uppercase;
+}
+
+// --Styling Fonts
+h1 {
+    // width: 234px;
+    font-family: 'Francois One', sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 48px; /* 133.333% */
+    letter-spacing: 1.44px;
+    text-transform: uppercase;
+       
+}
+.margin {
+  margin-bottom: 40px;
+}
+sup {
+    // width: 100px;
+    font-family: 'Farro', sans-serif;
+font-size: 18px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+vertical-align: top;
+letter-spacing: 1.2px;
+font-feature-settings: 'sups' on;
+text-transform: none;
+// padding: 0 5px 10px;
+// margin-bottom: 28px;
+}
+p {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 48px;
+}
+.bold { 
+font-family: 'PT Sans', sans-serif;
+font-size: 28px;
+font-style: normal;
+font-weight: 700;
+line-height: 48px;
+}
+.italic {
+font-family: 'PT Sans', sans-serif;
+font-size: 28px;
+font-style: italic;
+font-weight: 400;
+line-height: 48px;
+}
+.underline {
+    text-decoration: underline;
+}
+mark {
+    background-color: lightgray;
+}
+
+
+article {    
+    padding-bottom: 90px;
+    color: #000;
+}
+.main-info {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+.react {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
