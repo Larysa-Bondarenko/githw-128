@@ -1,0 +1,264 @@
+/* francois-one-regular - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Francois One";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Francois One"), url("../fonts/francois-one/francois-one-v21-latin-regular.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* farro-300 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Farro";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Farro") url("../fonts/farro/farro-v14-latin-300.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* pt-sans-regular - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: local("PT Sans") url("../fonts/pt-sanspt-sans-v17-latin-regular.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* pt-sans-italic - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "PT Sans";
+  font-style: italic;
+  font-weight: 400;
+  src: local("PT Sans") url("../fonts/pt-sanspt-sans-v17-latin-italic.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* pt-sans-700 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: local("PT Sans") url("../fonts/pt-sanspt-sans-v17-latin-700.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* staatliches-regular - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Staatliches";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Staatliches") url("../fonts/staatliches/staatliches-v13-latin-regular.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* tourney-regular - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Tourney";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Tourney") url("../fonts/tourney/tourney-v13-latin-regular.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* tourney-600 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Tourney";
+  font-style: normal;
+  font-weight: 600;
+  src: local("Tourney") url("../fonts/tourney/tourney-v13-latin-600.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../images/bg-gear.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+.container {
+  width: min(90%, 1200px);
+  margin: 0 auto;
+}
+.container.columns {
+  display: grid;
+  grid-template-columns: 385px 1fr;
+  gap: 30px;
+  align-items: start;
+  margin-top: 100px;
+}
+
+aside {
+  padding: 8px;
+  position: sticky;
+  top: 80px;
+}
+aside .side-nav {
+  display: flex;
+  flex-direction: column;
+}
+aside li {
+  border-bottom: 1px solid #BDBDBD;
+  margin-bottom: 70px;
+}
+aside a {
+  text-decoration: none;
+  text-align: center;
+  color: #000;
+  font-family: "Francois One", sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: 1.44px;
+  text-transform: uppercase;
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  z-index: 10;
+  background-color: white;
+}
+
+.header-flex {
+  width: 1200px;
+  display: flex;
+  justify-content: center;
+  padding: 13px 0;
+}
+
+.img-wrap {
+  padding: 17px 0;
+  margin-right: 50px;
+}
+
+.doc {
+  display: flex;
+  justify-content: flex-start;
+  width: 300px;
+  gap: 10px;
+  flex-grow: 2;
+  padding: 13px 0;
+  margin-right: 0;
+}
+
+.doc a {
+  text-decoration: none;
+}
+
+.doc span {
+  color: #000;
+  font-family: "Staatliches", sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.66px;
+  text-transform: uppercase;
+}
+
+.dash {
+  width: 100px;
+  height: 8px;
+  border: 1px solid #000;
+  background-color: #000;
+  margin-bottom: 50px;
+}
+
+h1 {
+  font-family: "Francois One", sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 48px;
+  /* 133.333% */
+  letter-spacing: 1.44px;
+  text-transform: uppercase;
+}
+
+.margin {
+  margin-bottom: 40px;
+}
+
+sup {
+  font-family: "Farro", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  vertical-align: top;
+  letter-spacing: 1.2px;
+  font-feature-settings: "sups" on;
+  text-transform: none;
+}
+
+p {
+  font-family: "PT Sans", sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 48px;
+}
+
+.bold {
+  font-family: "PT Sans", sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+}
+
+.italic {
+  font-family: "PT Sans", sans-serif;
+  font-size: 28px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 48px;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+mark {
+  background-color: lightgray;
+}
+
+article {
+  padding-bottom: 90px;
+  color: #000;
+}
+
+.main-info {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+
+.react {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
