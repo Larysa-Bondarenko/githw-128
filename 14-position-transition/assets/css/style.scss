@@ -4,13 +4,11 @@
     margin: 0;
     box-sizing: border-box;    
 }
-// Куди все-таки треба цю шестерню 
-// на бекграунді?
 body {   
     background-image: url(../images/bg-gear.png);
     background-repeat: no-repeat;
-    background-position: top right;
-// background-size: 760px;
+    background-position: top 130px right;
+background-attachment: fixed;
 
 }
 // main {
