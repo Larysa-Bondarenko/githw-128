@@ -1,0 +1,310 @@
+@import 'fonts';
+
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 1 rem;
+    line-height: 1.5;
+    background-color: lightgrey;
+}
+.two-forms {  
+    width: min(90%, 1170px);  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 55px auto;  
+    
+}
+
+.account, .profile {
+    width: 570px;
+    background-color: #fff;
+}
+.container {
+    width: min(90%, 500px);
+    margin: 0 auto;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    justify-items: stretch;
+    align-items: center;
+    margin-bottom: 20px;
+    }
+h1 {
+    margin: 35px 0 20px;
+    color: #1C1C1C;
+font-family: 'Roboto', sans-serif;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: 32px;
+}
+
+input[type=text],
+ select,
+ input[type=number], 
+ input[type=tel],
+ input[type=email] {
+    height: 38px;
+    width: 100%;
+    font-size: 15px;
+line-height: 22px; 
+    padding: 7px 38px 7px 10px;
+    border: 1px solid #e4e4e4;
+    background-color: #fff;
+    border-radius: 6px;
+    appearance: none;
+}
+
+ .form-row input:focus {
+    border-color: #007BFF;
+outline: none;
+ } 
+
+.label, .radio-male, .radio-female 
+{
+    color: #545454;
+font-family: 'Roboto', sans-serif;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 22px;
+letter-spacing: -0.2px;
+
+}
+.label{
+    display: block;
+    margin-bottom: 7px;
+}
+
+.undermail-txt {
+    color: #969696;
+font-family: 'Roboto', sans-serif;
+font-size: 13px;
+font-style: normal;
+font-weight: 400;
+line-height: 18px; 
+letter-spacing: -0.1px;
+margin-bottom: 20px;
+}
+.radio-male, .radio-female{
+    position: relative;
+display: flex;
+justify-content: flex-start;
+align-items: center;
+gap: 8px;
+}
+.radio {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 21px;
+    margin-bottom: 20px;
+}
+
+input[type=radio]{
+width: 20px;
+aspect-ratio: 1;
+}
+
+input[type=radio]:checked::before {
+    content: '';   
+   position: absolute;  
+   border: 6px solid #007BFF;
+   border-radius: 100%;
+    background-color: #fff;
+width: 20px;
+aspect-ratio: 1;
+transition: all .2s ease;
+}
+
+// I don't know how
+// to make select the same width as others
+select {    
+    height: 38px;
+    width: 100%;
+    // padding: 7px 38px 7px 10px;
+    border: 1px solid #e4e4e4;
+    border-radius: 6px;
+    background: #fff url(../images/up-down-arrow.png) right top no-repeat;
+padding-right: 38px;
+appearance: none;
+color: #545454;
+font-family: 'Inter', sans-serif;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 22px; 
+letter-spacing: -0.2px;
+}
+select:focus {
+    border-color: #007BFF;
+    outline: none;
+ }
+
+.submit {
+    height: 38px;
+    width: 100%;
+    padding: 8px 10px;
+    color: #FFF;
+text-align: center;
+font-family: 'Roboto', sans-serif;
+font-size: 15px;
+font-style: normal;
+font-weight: 500;
+line-height: 22px; 
+letter-spacing: -0.1px;
+    border: 1px solid #007BFF;
+    border-radius: 6px;
+    background-color: #007BFF;
+    transition: all .2s ease;
+    margin-bottom: 22px;
+}
+.update {
+    width: 150px;
+}
+.submit:hover{
+    border: 2px solid #007BFF;
+    color: #007BFF;
+    border-radius: 6px;
+    background-color: #FFF;
+}
+.under-txt {
+    width: 410px;
+    padding: 0 40px;
+    margin: 0 45px 20px;
+
+    color: #969696;
+text-align: center;
+font-family: 'Roboto', sans-serif;
+font-size: 13px;
+font-style: normal;
+font-weight: 400;
+line-height: 18px;
+letter-spacing: -0.1px;
+}
+.under-txt a{
+    text-decoration: none;
+    color: #007BFF;
+}
+.under-txt a:hover{
+    text-decoration: underline;
+}
+.bottom-line {
+    padding: 20px 0 16px;
+    border-top: 1px solid #e4e4e4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+gap: 15px;
+div {
+    color: #545454;
+text-align: right;
+font-family: 'Roboto', sans-serif;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 22px;
+letter-spacing: -0.2px;
+}
+ .log-in {
+    width: 49px;
+    border-style: none;
+    background-color: #FFF;
+    color: #007BFF;
+font-family: 'Roboto', sans-serif;
+font-size: 15px;
+font-style: normal;
+font-weight: 500;
+line-height: 22px;
+letter-spacing: -0.1px;
+
+ }
+
+.log-in:hover { 
+    border-radius: 6px;
+    background-color: #007BFF;
+    color: #FFF;
+}
+}
+// Styling Profile
+.img-wrap{
+    margin-right: 10px;
+}
+.profi{
+    width: 170px;
+}
+.profi input{
+    width: 100%;
+    height: 30px;
+
+font-family: 'Inter', sans-serif;
+font-size: 13px;
+font-style: normal;
+font-weight: 600;
+line-height: 18px;
+    padding: 6px 32px 6px 10px;
+    border: 1px solid #e4e4e4;    
+    border-radius: 6px;
+    background-color: #fff;
+    background: #fff url(../images/Photo-Camera.png) right 7px top 7px no-repeat;
+background-size: 16px 16px;
+.front{
+    margin-bottom: 9px;
+    appearance: none;
+}
+}
+.file-txt{
+    width: 141px;
+    color: #969696;
+font-family: 'Roboto', sans-serif;
+font-size: 13px;
+font-style: normal;
+font-weight: 400;
+line-height: 18px; 
+letter-spacing: -0.1px;
+
+    margin-bottom: 0;
+}
+.profi input:focus {
+    border-color: #007BFF;
+// outline: none;
+ } 
+
+ .trash{
+    width: 30px;
+    aspect-ratio: 1;
+    margin-bottom: 18px;
+    background-image: url(../images/Trash.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 16px 16px;
+    border: 1px solid #e4e4e4;
+    background-color: #fff;
+    border-radius: 6px;
+    
+ }
+ .foto-flex{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    .profi{
+        align-self: center;
+    }
+ }
+
+.update{
+    margin-bottom: 110px;
+}
+   
+
+

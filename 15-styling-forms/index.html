@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>15 Styling Forms</title>
+    <link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+<body>
+    <div class="two-forms">
+        <div class="account">
+        <div class="container">
+        <h1>Create an Account</h1>
+        <form action="/action_page.php" target="_blank" method="post" >
+           
+            <div class="grid">
+                <div class="form-row">
+                    <label for="fname" class="label">First Name</label> 
+                    <input type="text" name="fname" id="fname" class="input-field">
+                </div>
+                <div class="form-row">
+                    <label for="lname" class="label">Last Name</label> 
+                    <input type="text" name="lname" id="lname" class="input-field">
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <label for="email" class="label">E-mail</label> 
+            <input type="email" name="email" id="email" class="input-field" required>
+            <div class="undermail-txt">We'll never share your email with anyone else.</div>
+            </div>
+                     <div class="radio">
+                        <div class="radio-male">
+                    <input type="radio" name="gender" id="male" value="male" checked>
+                    <label for="male">Male</label> 
+                         </div>          
+                        <div class="radio-female">
+                    <input type="radio" name="gender" id="female" value="female">
+                    <label for="female">Female</label>
+                        </div>
+                     </div>
+            <div class="grid">
+                <div class="form-row country">
+                    <label for="country" class="label">Country</label>
+                        <select name="country" id="country" class="select" placeholder="Select">
+                            <option value="blank" class="text-select" disabled selected>Select</option> 
+                            
+                            <option value="ukraine">Ukraine</option>
+                            <option value="spain">Spain</option>
+                            <option value="germany">Germany</option>
+                            <option value="italy">Italy</option>
+                            <option value="china">China</option>
+                        </select>
+                       
+                    </div>
+                    <div class="form-row">
+                        <label for="city" class="label">City</label> 
+                        <input type="text" name="city" id="city" class="input-field">
+                    </div>
+            </div>
+          
+            <button type="submit" class="submit">Sign Up</button>               
+             
+                   
+        </form>
+        <div class="under-txt">
+            By clicking the 'Sign Up' button, you confirm that you accept our <a href="#">Terms of Use</a>
+             and <a href="#">Privacy Policy</a>.
+        </div>
+        <div class="bottom-line">
+            <div>Have an account?</div>
+           <button type="button" class="log-in">Log In</button>
+        </div>
+
+        </div> 
+    
+
+        </div>
+
+    <div class="profile">
+        <div class="container">
+        <h1>Profile</h1>
+         
+        <form action="/action_page.php" target="_blank" method="post" >
+           
+            <div class="foto-flex">
+            <div class="img-wrap">
+                <img src="assets/images/avatar.png" alt="picture">
+            </div>
+            <div class="form-row profi">
+                <input type="file"  name="file" id="file" class="front">
+                <!-- <input type="text" class="back"> -->
+                <div class="file-txt">Up to 1 MB (300x300 px)</div>
+            </div>
+            <div class="btn-wrap">
+                <button type="button" class="trash"></button>
+            </div>         
+
+           </div>
+
+           <div class="grid">
+           <!-- <div class="flex"> -->
+              <div class="form-row">
+                <label for="name" class="label">Name</label> 
+                <input type="text" name="name" id="name" class="input-field">
+              </div>
+           
+              <div class="form-row profile-email">
+                <label for="prof-email" class="label">E-mail</label> 
+            <input type="email" name="email" id="prof-email" class="input-field" required>
+              </div>
+           <!-- </div> -->
+            <!-- <div class="flex"> -->
+                 <div class="form-row country">
+                <label for="prof-country" class="label">Country</label>
+                    <select name="country" id="prof-country" class="select" placeholder="Select">
+                        <option value="blank" class="text-select" disabled selected>Select</option> 
+                        
+                        <option value="ukraine">Ukraine</option>
+                        <option value="spain">Spain</option>
+                        <option value="germany">Germany</option>
+                        <option value="italy">Italy</option>
+                        <option value="china">China</option>
+                    </select>
+                   
+                </div>
+                <div class="form-row">
+                    <label for="prof-city" class="label">City</label> 
+                    <input type="text" name="city" id="prof-city" class="input-field">
+                </div>   
+            <!-- </div> -->
+               <!-- <div class="flex-zip"> -->
+                 <div class="form-row">
+                    <label for="zip-code" class="label">Zip Code</label> 
+                    <input type="number" name="zip-code" id="zip-code" class="input-field">
+                 </div>
+               
+                  <div class="form-row">
+                    <label for="phone" class="label">Phone Number</label> 
+                <input type="tel" name="tel" id="phone" class="input-field">
+                  </div> 
+               <!-- </div> -->
+               
+            </div>   
+            <button type="submit" class="submit update">Update</button>      
+        </form>    
+
+        </div> 
+    </div>
+</div>   
+</body>
+</html>
