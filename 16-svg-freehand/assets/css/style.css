@@ -1,0 +1,242 @@
+/* roboto-regular - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto"), url("../fonts/roboto/roboto-v30-latin-regular.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* roboto-500 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Roboto"), url("../fonts/roboto/roboto-v30-latin-500.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* gotu-regular - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Gotu";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/gotu/gotu-v16-latin-regular.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* quicksand-regular - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Quicksand"), url("../fonts/quicksand/quicksand-v31-latin-regular.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* quicksand-500 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Quicksand"), url("../fonts/quicksand/quicksand-v31-latin-500.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* nunito-sans-regular - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Nunito Sans"), url("../fonts/nunito/nunito-sans-v15-latin-regular.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* nunito-sans-600 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 600;
+  src: local("Nunito Sans"), url("../fonts/nunito/nunito-sans-v15-latin-600.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1 rem;
+  line-height: 1.5;
+  color: #232323;
+}
+
+.page-wrapper {
+  display: flex;
+  width: 1440px;
+  flex-direction: column;
+  justify-content: center;
+  gap: 100px;
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.container {
+  width: min(90%, 1170px);
+  margin: 0 auto;
+}
+
+header {
+  height: 80px;
+  border-bottom: 1px solid #E5EAF4;
+  padding: 22px 0;
+}
+
+.up-title {
+  color: #7690A8;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+h1 {
+  width: 377px;
+  color: #16133D;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 52px;
+  letter-spacing: 0.2px;
+  margin-bottom: 40px;
+}
+
+.flex {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.service-box {
+  width: 100%;
+  padding: 40px;
+  border-radius: 8px;
+  border: 1px solid #E5EAF4;
+  transition: all 0.2ms ease;
+}
+.service-box .icon-wrap {
+  width: 64px;
+  height: 64px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #E5EAF4;
+  border-radius: 8px;
+}
+.service-box .icon-wrap .green-icon {
+  display: none;
+}
+.service-box:hover .icon-wrap .blue-icon {
+  display: none;
+}
+.service-box:hover .icon-wrap .green-icon {
+  display: block;
+}
+
+.service-box:hover {
+  border-radius: 8px;
+  border: 1px solid #3DB370;
+}
+
+h3 {
+  width: 80px;
+  color: #16133D;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21.28px;
+  letter-spacing: 0.2px;
+  margin-bottom: 15px;
+}
+
+p {
+  color: #16133D;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: #3DB370;
+  width: 90px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #16133D;
+  padding: 40px 0;
+}
+footer .img-wrap {
+  width: 157px;
+  margin-bottom: 40px;
+}
+
+.social {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.social .black-icon, .social .green-icon {
+  width: 20px;
+  aspect-ratio: 1;
+}
+
+.social a {
+  width: 38px;
+  height: 38pxpx;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 8px;
+  transition: all 0.2ms ease;
+}
+.social a .green-icon {
+  display: none;
+}
+.social a:hover .black-icon {
+  display: none;
+}
+.social a:hover .green-icon {
+  display: block;
+}
