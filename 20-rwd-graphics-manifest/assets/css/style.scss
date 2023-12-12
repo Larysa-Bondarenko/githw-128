@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    // outline: 1px solid red;
+    outline: 1px solid red;
 }
 body {
     font-family: sans-serif;
@@ -184,10 +184,22 @@ a:hover{
     letter-spacing: 1.2px;
     margin-bottom: 30px;
 }
-
 @media screen and (max-width: 992px){
+    .pic-wrap{
+        aspect-ratio: 170/38;
+    }
+    .overview-txt{
+        width: 100%;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 768px){
     .container{
         width: min(90%, 756px);
+    }
+    .pic-wrap{
+        aspect-ratio: 170/38;
     }
 .overview-txt{
     width: 100%;
@@ -231,13 +243,31 @@ ul{
     margin-bottom: 40px;
 }
 }
-
 @media screen and (max-width: 420px){
     .container{
-        width: min(95%, 400px); //this width?
+        width: min(95%, 300px); 
+    }
+    .pic-wrap{
+        aspect-ratio: 1;
+    }
+    h1{
+        font-size: 28px;
+    }
+    .q-n{
+        font-size: 32px;
+    line-height: normal;
+    letter-spacing: 1.6px;
+    }
+}
+@media screen and (max-width: 320px){
+    .container{
+        width: min(95%, 300px); 
+    }
+    .pic-wrap{
+        aspect-ratio: 1;
     }
  h1{
-    font-size: 29px;
+    font-size: 28px;
 letter-spacing: 1.5px;
 margin-bottom: 40px;
  }
@@ -245,6 +275,7 @@ margin-bottom: 40px;
     margin-bottom: 70px;
 }
 h4{
+    font-size: 27px;
     margin-bottom: 40px;
 }
 .overview-txt, .sub-txt{
@@ -288,7 +319,7 @@ letter-spacing: 1.8px;
 .copy-rt{
     font-size: 16px;
 letter-spacing: 1.6px;
-padding: 0 26px;
+padding: 0 24px;
 }
 ul{
     margin-bottom: 40px;
