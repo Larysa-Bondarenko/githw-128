@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Shop</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+
+</head> 
+<body>
+    <!-- <div class="my-toast">
+<p class="mb-0"> Bla bla bla.</p>
+    </div> -->
+<div class="container">
+    <div class="card mb-4">
+        <div class="card-header">
+            <h3>Add product to cart</h3>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-6">
+                    <label for="prod_title">Title</label>
+                    <input type="text" id="prod_title" class="form-control">
+                </div>
+                <div class="col-2">
+                    <label for="prod_qty">Quantity</label>
+                    <input type="number" id="prod_qty" class="form-control" value="1" min="1">
+                </div>
+                <div class="col-2">
+                    <label for="prod_price">Price</label>
+                    <input type="number" id="prod_price" class="form-control"         min="0">
+                </div>
+                <div class="col-2">
+                    <button type="button" class="btn btn-success mt-4" onclick="addToCart()">Add</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card mb-4">
+        <div class="card-header">
+            <h3>Discount</h3>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-6">
+                    <label for="disc_type">Type</label>
+                    <select id="disc_type" class="form-control">
+                            <option value="percent">Percent</option>
+                            <option value="fixed">Fixed</option>
+                    </select>
+                </div>
+                <div class="col-2">
+                    <label for="disc_ammount">Ammount</label>
+                    <input type="number" value="0" id="disc_ammount" class="form-control">
+                </div>
+                
+                <div class="col-2">
+                    <button type="button" class="btn btn-success mt-4" onclick="applyDisc()">Apply</button>
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="card">
+    <div class="card-header">
+        <h3>Product List</h3>
+    </div>
+    <div class="card-body">
+        <select id="sorting" class="form-control" onchange="ProductList()">
+            <option value="subTotalAsc"> Sub total asc</option>
+            <option value="subTotalDesc">Sub total desc</option>
+            <option value="qtyAsc">Quantity asc</option>
+            <option value="qtyDesc">Quantity desc</option>
+            <option value="title">Title</option>
+        </select>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Title</th>
+                    <th>Bought</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Sub total</th>
+                    <th>Actions</th>
+
+                </tr>
+            </thead>
+            <tbody id="cart_tbody"></tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="5">Discount:</th>
+                    <th id="cart_disc"></th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th colspan="5">Total:</th>
+                    <th id="cart_total"></th>
+                    <th></th>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</div>
+
+
+</div>
+
+    <script src="assets/js/recurs.js"></script>
+    <script src="assets/js/toast.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
