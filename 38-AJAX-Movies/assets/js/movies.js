@@ -9,7 +9,7 @@ btn.onclick = function(){
   }
 }
 async function searchMovies(search){
-  const response = await fetch(`http://www.omdbapi.com/?apikey=${API_KEY}&S=${search}&type=movie`)
+  const response = await fetch(`https://www.omdbapi.com/?apikey=${API_KEY}&S=${search}&type=movie`)
 const json = await response.json();
 if(json.Response === 'True' ){
 let list = ''
@@ -36,7 +36,7 @@ document.addEventListener('click', function(event){
 })
 
 async function getDetailMovie(id){
-    const response = await fetch(`http://www.omdbapi.com/?apikey=${API_KEY}&i=${id}`)
+    const response = await fetch(`https://www.omdbapi.com/?apikey=${API_KEY}&i=${id}`)
     const json = await response.json();
     console.log(json);
 }
